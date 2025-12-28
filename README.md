@@ -22,4 +22,4 @@ We are going to use different technologies such as Python, Amazon Web Services (
 ## Dataset Used
 You can use any dataset, we are mainly interested in operation side of Data Engineering (building data pipeline) 
 
-Here is the dataset used - https://github.com/visheshpaka/Stock_Market_Kafka/blob/main/indexProcessed.csv
+Here is the dataset used - https://github.com/Aditya0241/kafka-streaming-project/blob/eb7c841ea4ad086b94d8929a42537c168e168ff5/indexProcessed.csv
