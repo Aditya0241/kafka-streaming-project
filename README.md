@@ -1,25 +1,72 @@
-# Stock Market Kafka Real Time Data Engineering Project
+# 📈 Real-Time Stock Market Data Pipeline using Apache Kafka & AWS
 
-## Introduction 
-In this project, you will execute an End-To-End Data Engineering Project on Real-Time Stock Market Data using Kafka.
+## Overview
 
-We are going to use different technologies such as Python, Amazon Web Services (AWS), Apache Kafka, Glue, Athena, and SQL.
+This project demonstrates a real-time data engineering pipeline built using Apache Kafka and AWS. Stock market data is streamed through Kafka, stored in Amazon S3, and made available for analytics using AWS Glue and Amazon Athena.
 
-## Architecture 
-<img src="Architecture.png">
+The project focuses on building a scalable and cloud-native streaming architecture while showcasing key Data Engineering concepts such as real-time ingestion, data lake storage, metadata management, and serverless querying.
 
-## Technology Used
-- Programming Language - Python
-- Amazon Web Service (AWS)
-1. S3 (Simple Storage Service)
-2. Athena
-3. Glue Crawler
-4. Glue Catalog
-5. EC2
+## Architecture
+
+![Architecture](Architecture.png)
+
+## Tech Stack
+
+### Languages
+- Python
+
+### Streaming Platform
 - Apache Kafka
 
+### AWS Services
+- Amazon EC2
+- Amazon S3
+- AWS Glue Crawler
+- AWS Glue Data Catalog
+- Amazon Athena
 
-## Dataset Used
-You can use any dataset, we are mainly interested in operation side of Data Engineering (building data pipeline) 
+## Pipeline Workflow
 
-Here is the dataset used - https://github.com/Aditya0241/kafka-streaming-project/blob/eb7c841ea4ad086b94d8929a42537c168e168ff5/indexProcessed.csv
+1. Generate stock market data using Python.
+2. Publish records to Kafka topics using a Producer.
+3. Consume streaming data using a Kafka Consumer.
+4. Store processed records in Amazon S3.
+5. Crawl S3 data using AWS Glue Crawler.
+6. Create metadata tables in AWS Glue Data Catalog.
+7. Query data directly from S3 using Amazon Athena.
+
+## Dataset
+
+The project uses a sample stock market dataset for simulating real-time data streaming.
+
+Dataset Link:
+- https://github.com/Aditya0241/kafka-streaming-project/blob/main/indexProcessed.csv
+
+## Key Features
+
+- Real-time data ingestion using Apache Kafka
+- Event-driven streaming architecture
+- Data Lake implementation using Amazon S3
+- Automated schema discovery with AWS Glue
+- Serverless analytics using Amazon Athena
+- Scalable cloud-based data pipeline
+
+## Skills Demonstrated
+
+- Data Engineering
+- Apache Kafka
+- AWS Cloud
+- Data Lakes
+- ETL Pipelines
+- Python
+- SQL
+- Real-Time Data Processing
+- Metadata Management
+
+## Future Improvements
+
+- Integrate live stock market APIs
+- Add Apache Spark Structured Streaming
+- Build QuickSight dashboards
+- Implement Infrastructure as Code (Terraform)
+- Automate deployment using CI/CD pipelines
